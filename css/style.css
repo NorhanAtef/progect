@@ -1,0 +1,866 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #6b70ba;
+    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+    border-radius: 15px 0 0 0;
+}
+.header-logo{
+margin: 20px 0 0 20px;
+}
+.logo-search{
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border-radius: 20px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+.logo-search .search{
+      position: absolute;
+      font-size: 20px;
+      top: 0;
+      margin: 5px 0 0 10px;
+}
+.header-logo .house{
+    float: left;
+    color: white;
+  font-size: 25px;
+}
+.header .list{
+    float: right;
+}
+.header .list li{
+    display: inline-block;
+    margin: 0 30px 0 10px;
+}
+.header .list li a{
+     text-decoration: none;
+     color: white;
+     text-transform: capitalize;
+        position: relative;
+        padding-bottom: 8px ;
+}
+
+.header .list li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+   background-color: blue;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+.header .list li a:hover::after{
+    width: 100%;
+}
+.list2{
+  position: relative;
+}
+.list2-menu{
+    width: 160px;
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+     visibility: hidden;
+     margin-top: 10px;
+}
+.list2-menu li {
+    position: relative;
+    display: block;
+    width: 100%;
+  padding: 15px 0px; 
+}
+.list2 .list2-menu li a{
+      color:rgb(125, 125, 227);
+     display: inline-block;
+     text-decoration: none;
+     text-transform: capitalize;
+     position: relative;
+}
+.list2:hover .list2-menu{
+    visibility: visible;
+}
+.list2 .list2-menu li a::after{
+     content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+   background-color: blue;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+.list2 .list2-menu li a:hover::after{
+    width: 100%;
+}
+
+.line{
+    width: 80px;
+    height: 3px;
+    background-color:#6C6CD6;
+    margin: auto;
+}
+h4{
+     text-transform: capitalize;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+/* /////////////////section1/////////////////////// */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    background:url(../image/imgi_17_front-view-elegant-perfume-colored-flowers-light-blue-background_140725-144930\ \(1\).jpg) no-repeat fixed center;
+    background-size: cover;
+    position: relative;
+}
+.home-overlay{
+    background-color:rgba(0, 0, 0, 0.667);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.home-text{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+.pargraph{
+    color: darkgrey;
+    letter-spacing: 2px;
+    width: 850px;
+    font-size: 15px;
+    margin: 5px 0 10px 0;
+    margin-left: 50px;
+}
+.home-btn{
+    border: none;
+    padding: 15px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.btn-get{
+    background-color:rgb(94, 94, 235);
+    color: white;
+}
+.home-btn:hover{
+    opacity: 0.6;
+}
+/* //////////////////////section2///////////////////////// */
+.about{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+.about-contanier{
+    width: 95%;
+    height: 90vh;
+}
+.about-contant{
+    width: 30%;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px 0px;
+    text-align: center;
+    margin-top: 80px;
+  float: left;
+  position: relative;
+}
+.about-contant .gears{
+    font-size: 30px;
+    padding: 8px 0 20px 0;
+    color:#6C6CD6;
+}
+.about-contant .wand{
+     font-size: 30px;
+    padding: 8px 0 20px 0;
+     color:#6C6CD6;
+}
+.about-contant .mobile{
+     font-size: 30px;
+    padding: 8px 0 20px 0;
+     color:#6C6CD6;
+}
+.about-contanier .div2{
+   margin-right:5% ;
+   margin-left: 5%;
+}
+.about-contant h5{
+    text-transform: capitalize;
+    font-size: 30px;
+      text-align: center;
+      color: black;
+      z-index: 2;
+}
+.about-contant p{
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.359);
+    font-size: 16px;
+    padding: 15px 0px;   
+}
+.about-contant span{
+    color: rgba(137, 43, 226, 0.823);
+    text-transform: capitalize;
+}
+.about-contant:hover h5{
+  color:white ;
+  position: relative;
+}
+.about-contant:hover p{
+    color: black;
+}
+.about-contant::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:blue;
+    opacity: 0;
+}
+.about-contant:hover:after{
+    opacity: 0.2;
+   width: 100%;
+   height: 100%;
+   transition: 1s;
+}
+/* /////////////////////section3/////////////////////// */
+.Portfolio-contanier{
+    width: 100%;
+    background-color: #e8eaf8db;
+    margin-top: 30px;
+    overflow: auto;
+}
+.port-parent{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 50px;
+}
+
+.portfolio-item{
+    width: 30%;
+    position: relative;
+    float: left;
+    margin: 0 0 20px 20px;
+}
+.portfolio-imge{
+  width: 100%;
+}
+.portfolio-imge img{
+    height: 250px;
+    width: 100%;
+}
+.portfolio-overlay i{
+    color:darkgray;
+    font-size: 20px;
+    background-color: white;
+   padding: 8px;
+   border-radius: 5px 8px;
+}
+.portfolio-imge .portfolio-overlay{
+    text-align: center;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.325);
+    display: none;
+}
+
+.portfolio-item:hover .portfolio-overlay{
+    display: block;
+}
+.portfolio-overlay h5{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 30px;
+}
+.portfolio-overlay p{
+    color: white;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+/* ///////////section4//////////// */
+.Services{
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.Services-parent{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    overflow: auto;
+}
+.services-item{
+    width: 30%;
+    height: 200px;
+    border: 1px solid blue;
+    overflow: auto;
+    padding: 30px 20px 30px 20px;
+    background-color: white;
+       position: relative;
+       float: left;
+        margin:0  0 30px 20px;
+}
+
+.Services-icon{
+    float: left;
+     color:#6C6CD6;
+    font-size: 30px;
+}
+.Services-text span{
+    float: left;
+    width: 150px;
+    margin-left: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.Services-text p{
+    float: left;
+    width: 200px;
+    margin-left: 50px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.246);
+}
+.Services-text .sp2{
+   float: left;
+    width: 190px;
+    margin-left: 20px;
+    color: black;
+    font-size: 20px;
+}
+.Services-text .p2{
+    width:170px ;
+}
+.Services-text .sp3{
+    width: 200px;
+    margin-left: 10px;
+    color: black;
+}
+.Services-text .p3{
+    width: 190px;
+}
+.services-item::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    opacity: 0;
+}
+
+.services-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+.services-item:hover .Services-text p{
+  color: black;
+}
+/* //////////////////section5/////////////////////////// */
+.prices{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    overflow: auto;
+}
+.prices-text{
+    width: 45%;
+    padding: 20px;
+    float: left;
+}
+
+.prices-text h5{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.prices .prices1{
+ width: 60px;
+    height: 3px;
+    background-color:#6C6CD6;
+    margin-left: 10px;
+}
+
+.prices-text p{
+    margin: 50px 0 50px 0;
+    color: rgba(0, 0, 0, 0.412);
+    width: 500px;
+}
+
+.prices-icon{
+    margin-bottom: 40px;
+}
+.prices-icon span{
+    color: rgba(0, 0, 0, 0.46);
+    font-size: 18px;
+}
+.prices-icon i{
+    color: #6C6CD6;
+    font-size: 20px;
+}
+.prices-image {
+    float: left;
+    width: 40%;
+    margin-left: 150px;
+}
+
+.prices-image img{
+    width: 80%;
+}
+.prices-image ul{
+    margin: 10px 0 0 150px;
+}
+.prices-image ul li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display:inline-block;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.194);
+}
+.prices-image ul li:hover{
+    background-color: #9393EB;
+    border: none;
+}
+ul li.active{
+    background-color:#9393EB;
+}
+/* //////////////////section6//////////////////////// */
+.blog{
+    background: url("../image/perfume-with-floral-aroma-burst-generative-ai_74760-4858.jpg") no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    position: relative;
+    overflow: auto;
+}
+.overlay-blog{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.4;
+}
+.blog-content{
+     width: 90%;
+       margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.blog-icon{
+    width: 20%;
+    text-align: center;
+    float: left;
+   margin-left: 50px;
+   padding: 10px;
+}
+
+.blog-icon i{
+    color: #989EF0;
+    font-size: 50px;
+    display: block;
+    margin: 10px 0 10px 0;
+}
+.blog-icon span{
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.blog-icon p{
+    color: white;
+}
+/* /////////////////section7///////////////////////// */
+.table{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    overflow: auto;
+}
+
+.table-card h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    margin:30px 0 30px 0 ;
+}
+.table-cards{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.table-card{
+    width: 30%;
+    border: 1px solid  #6C6CD6;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    margin-left: 20px;
+    padding: 20px ;
+    position: relative;
+}
+.coast{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #6C6CD6;
+    margin: auto;
+    padding: 10px 10px;
+}
+.coast .sp4{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+ 
+.table-card p{
+    margin: 20px;
+    text-transform: capitalize;
+}
+
+.table-card button{
+    padding: 5px 20px;
+    border: 2px solid #6b70ba;
+    margin: 20px 0 20px 0;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+.table-card::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+}
+
+.table-card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+/* //////////////section8//////////////// */
+.section{
+width: 100%;
+height: 50vh;
+background: url(../image/imgi_19_front-view-cologne-bottle-rotten-tree-branch-isolated-light-blue-background_140725-145204.jpg) no-repeat center fixed;
+background-size: cover;
+position: relative;
+overflow: auto;
+margin-top: 50px;
+}
+
+.section-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.section-continer{
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    overflow: auto;
+}
+.section-content{
+    width:45%;
+    float: left;
+    margin: auto;
+    margin-left: 50px;
+    padding: 5px;
+}
+.section .content-icon img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+float: left;
+margin-right: 20px;
+}
+
+.content-icon h5{
+    font-size: 30px;
+    color: white;
+    text-transform:capitalize ;
+    padding-top: 20px;
+}
+.content-icon h6{
+    color: blue;
+    font-size: 15px;
+    margin: 10px 0 20px 0;
+}
+.section p{
+    width: 400px;
+    text-transform: capitalize;
+    color: black;
+}
+/* //////////section9///////////////// */
+.team{
+    margin-top: 80px;
+    overflow: auto;
+}
+
+.team-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.team-item{
+    float: left;
+    width: 30%;
+     background-color: rgba(34, 31, 31, 0.034);
+     text-align: center;
+     padding: 18px 14px;
+     position: relative;     
+}
+.team-item-image img{
+    width: 200px;
+    width: 100%;
+}
+.team-item-2{
+    margin: 0px 5%;
+}
+.team-item-image{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.overlay-team-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+}
+.team-item:hover .overlay-team-image{
+    visibility: visible;
+}
+
+.overlay-team-image  a{
+    display: block;
+     width: 40px;
+     height: 40px;
+       background-color: rgb(28, 28, 238);
+      color: white;
+       margin-left: auto;
+       font-size: 20px;
+}
+.overlay-team-image a i{
+     line-height:40px ;
+}
+.team-item-info h3{
+    text-transform: capitalize;
+    color: black;
+    font-size: 30px;
+    margin: 20px 0;
+    z-index: 2;
+}
+.team-item-desc p{
+    color: rgba(0, 0, 0, 0.279);
+    text-transform: uppercase;
+}
+.team-item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    opacity: 0.2;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.team-item:hover h3{
+color: white;
+position: relative;
+}
+.team-item:hover p{
+    color: rgba(0, 0, 255, 0.507);
+}
+/* /////////////section10////////////// */
+.news{
+    width: 100%;
+    margin-top: 50px;
+      overflow: auto;
+}
+
+.news-parent{
+     width: 90%;
+    margin: auto;
+    background-color: blueviolet;
+    margin-top: 30px;
+}
+.news-parent-item{
+    width: 28%;
+    border: 1px solid blue;
+    text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      float: left;
+      margin-left: 50px;
+      position: relative;
+}
+.news-parent-item img{
+    width: 250px;
+    height: 230px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.news-icons{
+    overflow: auto;
+ margin-left: 20px;
+}
+.news-icon{
+    float: left;
+    margin-left: 15px;
+}
+
+.news-icon i{
+    color:#4F4FE9;
+}
+.news-parent-item .sp5{
+    color: rgba(137, 43, 226, 0.509);
+    margin-top: 20px ;
+}
+.news-parent-item h5{
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.news-parent-item p{
+    width: 300px;
+    color: rgba(0, 0, 0, 0.345);
+    margin: 10px 0px;
+    font-size: 15px;
+}
+
+.news-parent-item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    opacity: 0.4;
+       z-index: -1;
+}
+.news-parent-item:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.news-parent-item:hover h5{
+    color: white;
+}
+.news-parent-item:hover p{
+    color: blue;
+}
+/* //////////section11////////////// */
+.final-section{ 
+    width: 100%;
+    background-color: rgba(179, 166, 166, 0.612);
+      margin-top: 50px;
+}
+.final-contanier{
+    width: 50%;
+    margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+.final-contanier img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+.final-icon{
+     margin-top: 20px; 
+} 
+.final-icon a{
+    font-size: 30px;
+    color: white;
+    margin-left: 5px;
+   background-color: #6b70bad0;
+   border-radius: 50%;
+   padding: 10px;   
+}
+.final-icon a:hover{
+    background-color: #4E43E9;
+}
+.final-contanier p{
+    margin-top: 20px;
+    text-transform: uppercase;
+    opacity: 0.4;
+}
